@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'; 
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid d-flex justify-content-center mt-5">
+      <div className="row border">
+      <h1 className="col-12 text-center">To-Do List:</h1>
+      <div className="col-12 px-3">
+      <input className="col-6 px-1" placeholder="To-Do"></input>
+      <button className="btn btn-primary col-6 px-1">Submit</button>
+      </div>
+      <ul className="list-unstyled pl-3">
+        <li><input type="checkbox"></input></li>
+        <li><input type="checkbox"></input></li>
+        <li><input type="checkbox"></input></li>
+        <li><input type="checkbox"></input></li>
+      </ul>
+      </div>
     </div>
   );
 }
